@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <title>Flask Server</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <h1>Hi! {{name}}</h1>
+    <form method="POST" action="/" autocomplete="off">
+      <label for="data">Enter data:</label><br>
+      <input type="text" id="data" name="data"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+    <br>
+    <h2>Data:</h2>
+    <p>{{ data }}</p>
+  </body>
+</html>
